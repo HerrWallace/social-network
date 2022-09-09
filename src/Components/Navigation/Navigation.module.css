@@ -1,0 +1,25 @@
+.navigation {
+  position: sticky;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 230px;
+  margin: 15px 200px 0 0;
+  padding-top: 25px;
+}
+
+.item {
+  text-align: left;
+  width: 170px;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.item:hover {
+  background-color: #e5e7eb;
+  transition: 0.3s;
+}
