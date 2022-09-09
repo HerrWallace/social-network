@@ -1,0 +1,9 @@
+.profileImage {
+  margin: 25px 0 0 15px;
+  border: solid 3px white;
+  border-radius: 5px;
+  max-height: 230px;
+  height: 230px;
+  width: 230px;
+  background-color: rgb(100, 152, 242);
+}
