@@ -1,11 +1,10 @@
-import style from  './Header.module.css';
+import style from './Header.module.css';
 
 export const Header = () => {
   return (
     <div className={style.header}>
-			<div className={style.logo}>Mojo</div>
-			<div className={style.nav}>
-			</div>
-		</div>
-  )
-}
+      <div className={style.logo}>Mojo</div>
+      <div className={style.nav}></div>
+    </div>
+  );
+};
