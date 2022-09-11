@@ -1,3 +1,4 @@
+import { Post } from '../Post/Post';
 import styles from './ProfilePosts.module.css';
 
 export const ProfilePosts = () => {
@@ -5,6 +6,8 @@ export const ProfilePosts = () => {
     <>
       <textarea className={styles.textarea} />
       <button className={styles.button}>Add post</button>
+      <Post />
+      <Post />
     </>
   );
 };
