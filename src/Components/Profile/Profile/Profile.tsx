@@ -1,11 +1,11 @@
 import { ProfilePosts } from '../ProfilePosts/ProfilePosts';
 import { ProfileImage } from '../ProfileImage/ProfileImage';
 import { ProfileInfo } from '../ProfileInfo/ProfileInfo';
-import styles from './MyProfile.module.css';
+import styles from './Profile.module.css';
 
-export const MyProfile = () => {
+export const Profile = () => {
   return (
-    <div className={styles.myProfile}>
+    <div className={styles.profile}>
       <ProfileImage />
       <div className={styles.stream}>
         <ProfileInfo />

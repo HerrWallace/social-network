@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Header } from './Components/Header/Header';
-import { MyProfile } from './Components/MyProfile/MyProfile/MyProfile';
+import { Profile } from './Components/Profile/Profile/Profile';
 import { Navigation } from './Components/Navigation/Navigation';
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
         <Navigation />
 
         <Routes>
-          <Route path='/profile/*' element={<MyProfile />} />
+          <Route path='/profile/*' element={<Profile />} />
         </Routes>
       </div>
     </div>
