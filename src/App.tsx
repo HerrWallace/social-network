@@ -3,6 +3,7 @@ import './App.css';
 import { Header } from './Components/Header/Header';
 import { Profile } from './Components/Profile/Profile/Profile';
 import { Navigation } from './Components/Navigation/Navigation';
+import { Messenger } from './Components/Messenger/Messenger/Messenger';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
 
         <Routes>
           <Route path='/profile/*' element={<Profile />} />
+          <Route path='/messenger/*' element={<Messenger />} />
         </Routes>
       </div>
     </div>
