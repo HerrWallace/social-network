@@ -1,8 +1,8 @@
-.profileInfo {
+.info {
   display: block;
   border: solid 1px rgb(226, 226, 255);
-  width: 500px;
-  max-width: 500px;
+  width: 600px;
+  max-width: 600px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -12,8 +12,9 @@
   padding-left: 10px;
 }
 
-.profileName {
+.name {
   font-size: 26px;
   font-weight: 600;
   margin: 10px 0 35px 5px;
+  cursor: pointer;
 }

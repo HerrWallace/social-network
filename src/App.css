@@ -11,4 +11,7 @@ body {
 .App_noWrap {
   display: flex;
   flex-wrap: nowrap;
+  width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
 }

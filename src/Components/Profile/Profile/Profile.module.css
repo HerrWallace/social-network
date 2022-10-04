@@ -5,7 +5,7 @@
 .stream {
   display: flex;
   flex-direction: column;
-  margin: 25px 50px;
-  max-width: 500px;
+  margin: 25px 25px;
+  max-width: 600px;
   width: 100%;
 }

@@ -1,12 +1,11 @@
 .navigation {
-  position: sticky;
-  top: 10px;
+  position: static;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 200px;
   height: 230px;
-  margin: 15px 0 0 200px;
+  margin: 15px 0 0;
   padding-top: 25px;
 }
 
