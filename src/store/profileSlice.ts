@@ -36,11 +36,12 @@ const profileSlice = createSlice({
   initialState,
   reducers: {
     addPost(state, action: PayloadAction<string>) {
-      console.log('add Post');
-      state.posts.unshift({
-        text: action.payload,
-      });
-      state.newPostText = '';
+      if (action.payload) {
+        state.posts.unshift({
+          text: action.payload,
+        });
+        state.newPostText = '';
+      }
     },
     updateInputText(state, action: PayloadAction<string>) {
       console.log('update new post text');
