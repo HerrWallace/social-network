@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import profileReducer from './profileSlice';
+import messengerReducer from './messengerSlice';
 
 const store = configureStore({
   reducer: {
     profile: profileReducer,
+    messenger: messengerReducer,
   },
 });
 

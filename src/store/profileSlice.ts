@@ -44,7 +44,6 @@ const profileSlice = createSlice({
       }
     },
     updateInputText(state, action: PayloadAction<string>) {
-      console.log('update new post text');
       state.newPostText = action.payload;
     },
   },
