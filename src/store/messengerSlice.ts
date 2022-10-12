@@ -6,8 +6,20 @@ type User = {
   lastMessage: string;
 };
 
+type Message = {
+  queueID: string;
+  side: string;
+  content: string;
+}
+
+type Dialog = {
+  dialogId: string;
+  messages: Message[];
+}
+
 type MessengerState = {
   users: User[];
+  dialog: Dialog[];
 };
 
 const initialState: MessengerState = {
@@ -36,6 +48,28 @@ const initialState: MessengerState = {
       id: '6',
       name: 'Matt',
       lastMessage: 'agreed',
+    },
+  ],
+  dialog: [
+    {
+      dialogId: '1',
+      messages: [
+        {
+          queueID: '1',
+          side: 'left',
+          content: 'Hello'
+        },
+      ] 
+    },
+    {
+      dialogId: '2',
+      messages: [
+        {
+          queueID: '1',
+          side: 'left',
+          content: 'Hi'
+        },
+      ] 
     },
   ],
 };

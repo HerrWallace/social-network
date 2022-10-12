@@ -1,7 +1,10 @@
 .user {
   display: flex;
   box-sizing: border-box;
-  border-right: solid 1px gray;
+  background-color: #fff;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
 }
 /* rgb(0, 138, 236) */
 
@@ -11,7 +14,7 @@
   align-items: flex-start;
   width: 230px;
   padding: 5px 5px 10px 5px;
-  border-bottom: solid 1px gray;
+  border-bottom: solid 1px #dce1e6;
 }
 
 .user a {

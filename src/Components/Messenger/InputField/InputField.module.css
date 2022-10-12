@@ -1,0 +1,25 @@
+.inputField {
+  box-sizing: border-box;
+  min-height: 63px;
+  width: 600px;
+  padding: 12px 0 0 10px;
+  background-color: #fafbfc;
+  border-top: #dce1e6;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 480px;
+  min-height: 36px;
+  max-height: 200px;
+  padding: 10px 10px 10px 13px;
+  resize: none;
+  border-radius: 6px;
+  border-color: #dce1e6;
+  outline: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  line-height: 17px;
+  word-wrap: break-word;
+}
+

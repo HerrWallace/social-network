@@ -1,4 +1,5 @@
 import { useAppSelector } from '../../../hooks';
+import { Dialog } from '../Dialog/Dialog';
 import { User } from '../User/User';
 import styles from './Messenger.module.css';
 
@@ -11,7 +12,9 @@ export const Messenger = () => {
   return (
     <div className={styles.messenger}>
       <div className={styles.users}>{userElements}</div>
-      <div className={styles.dialog}></div>
+      <div className={styles.dialog}>
+        <Dialog />
+      </div>
     </div>
   );
 };

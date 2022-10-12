@@ -3,3 +3,9 @@
   display: flex;
   flex-wrap: nowrap;
 }
+
+.users {
+  background-color: #fff;
+  border-right: solid 1px #dce1e6;
+  border-radius: 15px 0 0 15px;
+}
