@@ -4,6 +4,7 @@ import { Header } from './Components/Header/Header';
 import { Profile } from './Components/Profile/Profile/Profile';
 import { Navigation } from './Components/Navigation/Navigation';
 import { Messenger } from './Components/Messenger/Messenger/Messenger';
+import { Dialog } from './Components/Messenger/Dialog/Dialog';
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
 
         <Routes>
           <Route path='/profile/*' element={<Profile />} />
-          <Route path='/messenger/*' element={<Messenger />} />
+          <Route path='/messenger/*' element={<Messenger />}>
+            <Route path=':id' element={<Dialog />} />
+          </Route>
         </Routes>
       </div>
     </div>

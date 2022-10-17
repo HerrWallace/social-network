@@ -1,5 +1,9 @@
 import styles from './Message.module.css';
 
-export const Message = () => {
-  return <div className={styles.message}>Message</div>;
+type MessageProps = {
+  content: string;
+};
+
+export const Message = ({ content }: MessageProps) => {
+  return <div className={styles.message}>{content}</div>;
 };

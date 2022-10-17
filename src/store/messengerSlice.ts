@@ -12,7 +12,7 @@ type Message = {
   content: string;
 }
 
-type Dialog = {
+export type Dialog = {
   dialogId: string;
   messages: Message[];
 }
@@ -52,17 +52,27 @@ const initialState: MessengerState = {
   ],
   dialog: [
     {
-      dialogId: '1',
+      dialogId: '2',
       messages: [
         {
           queueID: '1',
+          side: 'left',
+          content: 'Message one'
+        },
+        {
+          queueID: '2',
+          side: 'left',
+          content: 'Message two'
+        },
+        {
+          queueID: '3',
           side: 'left',
           content: 'Hello'
         },
       ] 
     },
     {
-      dialogId: '2',
+      dialogId: '3',
       messages: [
         {
           queueID: '1',
