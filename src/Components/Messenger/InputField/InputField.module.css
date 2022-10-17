@@ -1,4 +1,6 @@
 .inputField {
+  display: flex;
+  justify-content: space-evenly;
   box-sizing: border-box;
   min-height: 63px;
   width: 600px;
@@ -23,3 +25,10 @@
   word-wrap: break-word;
 }
 
+.sendButton {
+  color: #818c99;
+  cursor: pointer;
+  opacity: 0.6;
+  background-color: #fff;
+  border: none;
+}
