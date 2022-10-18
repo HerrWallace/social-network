@@ -10,12 +10,12 @@ type Message = {
   queueID: string;
   side: string;
   content: string;
-}
+};
 
 export type Dialog = {
   dialogId: string;
   messages: Message[];
-}
+};
 
 type MessengerState = {
   users: User[];
@@ -55,21 +55,21 @@ const initialState: MessengerState = {
       dialogId: '2',
       messages: [
         {
-          queueID: '1',
-          side: 'left',
-          content: 'Message one'
+          queueID: '3',
+          side: 'right',
+          content: 'Hello',
         },
         {
           queueID: '2',
           side: 'left',
-          content: 'Message two'
+          content: 'Message two',
         },
         {
-          queueID: '3',
+          queueID: '1',
           side: 'left',
-          content: 'Hello'
+          content: 'Message one',
         },
-      ] 
+      ],
     },
     {
       dialogId: '3',
@@ -77,9 +77,9 @@ const initialState: MessengerState = {
         {
           queueID: '1',
           side: 'left',
-          content: 'Hi'
+          content: 'Hi',
         },
-      ] 
+      ],
     },
   ],
 };

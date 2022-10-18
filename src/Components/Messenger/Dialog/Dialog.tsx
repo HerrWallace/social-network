@@ -12,7 +12,7 @@ export const Dialog = () => {
     return null;
   }
 
-  const dialog = dialogs.filter((dialog) => {
+  const dialog = [...dialogs].filter((dialog) => {
     return dialog.dialogId === id;
   });
 
@@ -21,16 +21,15 @@ export const Dialog = () => {
   }
 
   const messageElements = dialog[0].messages.map((m) => (
-    <Message content={m.content} key={m.queueID} />
+    <Message content={m.content} side={m.side} key={m.queueID} />
   ));
 
   return (
     <>
-      {messageElements}
       <div className={styles.input}>
         <InputField />
       </div>
+      <div className={styles.messages}>{messageElements}</div>
     </>
   );
 };
-
