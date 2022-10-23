@@ -20,6 +20,7 @@ export type Dialog = {
 type MessengerState = {
   users: User[];
   dialog: Dialog[];
+  newMessageText: string;
 };
 
 const initialState: MessengerState = {
@@ -82,13 +83,38 @@ const initialState: MessengerState = {
       ],
     },
   ],
+  newMessageText: '',
 };
 
 const messengerSlice = createSlice({
   name: 'messenger',
   initialState,
-  reducers: {},
+  reducers: {
+    sendMessage(state, action: PayloadAction<{ id: string; text: string }>) {
+      let arrayNumber = 0;
+
+      for (let i = 0; i < state.dialog.length; i++) {
+        if (state.dialog[i].dialogId === action.payload.id) {
+          arrayNumber = i;
+          break;
+        }
+      }
+
+      if (action.payload.text) {
+        let queue = state.dialog[arrayNumber].messages.length + 1;
+        state.dialog[arrayNumber].messages.unshift({
+          queueID: String(queue),
+          side: 'right',
+          content: action.payload.text,
+        });
+        state.newMessageText = '';
+      }
+    },
+    updateInputText(state, action: PayloadAction<string>) {
+      state.newMessageText = action.payload;
+    },
+  },
 });
 
-export const {} = messengerSlice.actions;
+export const { sendMessage, updateInputText } = messengerSlice.actions;
 export default messengerSlice.reducer;
